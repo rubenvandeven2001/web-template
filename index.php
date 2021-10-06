@@ -1,30 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+<?php
+    // Include Twig-templating engine
+    require_once 'vendor/autoload.php';
 
-    <!-- Link stylesheet -->
-    <link rel="stylesheet" href="web/css/styles.css">
-</head>
-<body>
-    <header>
-
-    </header>
-
-    <main>
-        <section>
-
-        </section>
-    </main>
-
-    <footer>
-        
-    </footer>
-
-    <!-- Link Javascript-file -->
-    <script src="web/js/main.js"></script>
-</body>
-</html>
+    // Define the baseUrl
+    $baseUrl = "http://localhost/personal-projects/rubenvdven.nl/";
+    // Get the URL of the current requested page
+    $pageUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    // Store the page-specifier from the URL
+    $pageSpecifier = str_replace($baseUrl, "", $pageUrl);
+    
+    // Let twig read the templates folder
+    $loader = new \Twig\Loader\FilesystemLoader('templates');
+    // Create a new Twig envirorment (workspace)
+    $twig = new \Twig\Environment($loader);
+    // Render the base twig-file
+    echo $twig->render('/layouts/base.twig', ['page' => $pageSpecifier]);
+?>
