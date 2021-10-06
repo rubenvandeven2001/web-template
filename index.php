@@ -10,8 +10,15 @@
     <link rel="stylesheet" href="web/css/styles.css">
 </head>
 <body>
-    <header>
-        test
-    </header>
+    <header></header>
+
+    <main>
+        <section></section>
+    </main>
+
+    <footer></footer>
+
+    <!-- Link Javascript-file -->
+    <script src="web/js/main.js"></script>
 </body>
 </html>
