@@ -1,0 +1,14 @@
+# Personal project-files
+.env
+web/js/*
+web/css/*
+web/img/*
+
+# Dependencies managers
+vendor
+node_modules
+composer.lock
+package-lock.json
+
+# Dependencies
+mix-manifest.json

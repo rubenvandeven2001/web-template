@@ -1,0 +1,11 @@
+{
+  "name": "rubenvdven.nl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Ruben van de Ven",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.31"
+  }
+}
