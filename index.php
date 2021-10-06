@@ -10,13 +10,19 @@
     <link rel="stylesheet" href="web/css/styles.css">
 </head>
 <body>
-    <header></header>
+    <header>
+
+    </header>
 
     <main>
-        <section></section>
+        <section>
+
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        
+    </footer>
 
     <!-- Link Javascript-file -->
     <script src="web/js/main.js"></script>
